@@ -52,16 +52,16 @@ Project Lombok is used but not strictly necessary - although it takes care of Ja
 
 ### Dependencies
 
-- Spring-boot-started-data-jpa
+- Spring-boot-starter-data-jpa
 - Spring-boot-starter-web
-- mysql-conncector-java
+- mysql-connector-java
 - lombok
 
 ### Configuration
 
 To run this project, we'll have to set a few keys in the ***application.properties*** file.
 
-- *spring.datasource.url*: URL to your database schema (
+- *spring.datasource.url*: URL to your database schema
 - *spring.datasource.password*: password to use for database access
 - *spring.datasource.username*: username to use for database access
 - *spring.jpa.hibernate.ddl-auto*: defaults to update; whether Hybernate should reflect, or not, the changes in your @Entity classes on the matching database's tables (if possible).
@@ -83,8 +83,8 @@ We'll just use one table for users, containing the following fields:
 
 Through the ***UserController*** class, we'll expose two endpoints at the following URLs:
 
-1. *localhost:{server.port}/users/new*
-2. *localhost:{server.port}/users/login*
+- *localhost:{server.port}/users/new*
+- *localhost:{server.port}/users/login*
 
 You can use the likes of [Postman](https://www.postman.com/) to send requests.
 
